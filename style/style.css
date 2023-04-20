@@ -12,6 +12,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
 }
+.dropbox__list:hover .arrow {
+  color: #2aacc8;
+  background-color: #fff;
+  box-shadow: 0 -5px #2aacc8;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -68,32 +73,31 @@ ul {
 .dropbox {
   position: relative;
   padding-right: 27px;
+  transition-duration: all 20s;
 }
 .navigation__link:hover {
   color: #2aacc8;
   background-color: #fff;
   box-shadow: 0 -5px #2aacc8;
-  box-sizing: border-box;
 }
 
-.dropbox::after {
+.arrow::after {
   content: "\276F";
   transform: rotate(90deg);
   position: absolute;
   right: 10px;
 }
-.dropbox:hover::after {
+.arrow:hover::after {
   color: #000;
+  transform: rotate(270deg);
 }
 .dropbox__list {
   display: none;
   position: absolute;
-}
-.dropbox__list {
   background-color: #fff;
   padding: 0 6px;
+  top: 36px;
 }
-
 .dropbox__link {
   width: 200px;
   display: flex;
@@ -102,32 +106,52 @@ ul {
   color: #000;
   font-size: 13px;
   line-height: 2.8;
-  border-bottom: 1px solid #e7e7e7;
 }
-.last__link {
-  border-bottom: none;
+.arrow {
+  position: relative;
+}
+.dropbox__item:not(:last-child) {
+  border-bottom: 1px solid #e7e7e7;
 }
 
 .dropbox__link:hover {
   color: #2aacc8;
 }
-.dropbox:hover .dropbox__list {
+.arrow:hover .dropbox__list {
   display: block;
   top: 36px;
+  position: absolute;
 }
+.arrow:hover {
+  color: #2aacc8;
+  background-color: #fff;
+  box-shadow: 0 -5px #2aacc8;
+}
+
 /* ------------------------------------------------------------------ */
 .main__banner {
   background-color: #81e4ed;
   padding: 30px 0;
   margin-bottom: 5px;
 }
-.banner__container {
-  padding: 85px 35px;
-  height: 440px;
-  width: 100%;
+.header__container {
+  position: relative;
+  z-index: 5;
+}
+.carusel {
   background: url(../images/coments.png) top 0 right 0 / contain no-repeat,
     url(../images/cup_of_cofee.png) center center/ auto no-repeat, #e05936;
+  height: 440px;
+  width: 100%;
+  padding: 85px 35px;
 }
+.green {
+  background-color: #0c8d46;
+}
+.violet {
+  background-color: rgb(228, 139, 228);
+}
+
 .banner__title {
   font-weight: 700;
   font-size: 50px;

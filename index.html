@@ -5,6 +5,8 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style/slick.css">
+   <link rel="stylesheet" href="style/slick-theme.css">
    <link rel="stylesheet" href="style/style.css">
    <title>Document</title>
 </head>
@@ -16,7 +18,7 @@
             <ul class="header__navigation">
                <li class="navigation__item"><a href="#" class="navigation__link">home</a></li>
                <li class="navigation__item"><a href="#" class="navigation__link">about us</a></li>
-               <li class="navigation__item"><a href="#" class="navigation__link  dropbox">services</a>
+               <li class="navigation__item arrow"><a href="#" class="navigation__link dropbox">services</a>
                   <ul class="dropbox__list">
                      <li class="dropbox__item"><a href="" class="dropbox__link">Web Design</a></li>
                      <li class="dropbox__item"><a href="" class="dropbox__link">Wordpress Design</a></li>
@@ -25,7 +27,7 @@
                      <li class="dropbox__item"><a href="" class="dropbox__link last__link">Social Media Management</a></li>
                   </ul>
                </li>
-               <li class="navigation__item"><a href="#" class="navigation__link">portfolio</a></li>
+               <li class="navigation__item arrow"><a href="#" class="navigation__link dropbox">portfolio</a></li>
                <li class="navigation__item"><a href="#" class="navigation__link">blog</a></li>
                <li class="navigation__item"><a href="#" class="navigation__link">contact us</a></li>
             </ul>
@@ -34,7 +36,15 @@
       <main class="main">
          <div class="main__banner">
             <div class="banner__container container">
-               <h1 class="banner__title">We design clean, crisp & memorable icons</h1>
+               <div class="carusel red">
+                  <h2 class="banner__title">We design clean, crisp & memorable icons</h2>
+               </div>
+               <div class="carusel green">
+                  <h2 class="banner__title ">We design clean, crisp & memorable icons</h2>
+               </div>
+               <div class="carusel violet">
+                  <h2 class="banner__title ">We design clean, crisp & memorable icons</h2>
+               </div>
             </div>
          </div>
          <div class="main__article">
@@ -112,6 +122,8 @@
          </div>
       </footer>
    </div>
-   
+   <script src="js/jquery-3.6.4.min.js"></script>
+   <script src="js/slick.min.js"></script>
+   <script src="js/scripts.js"></script>
 </body>
 </html>
