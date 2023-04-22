@@ -154,7 +154,7 @@ ul {
   font-size: 50px;
   color: #fff;
   max-width: 320px;
-  font-family: "Lato";
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 /* ------------------------------------------------------------- */
 .article__container {
@@ -164,7 +164,7 @@ ul {
   min-height: 303px;
 }
 .article__item {
-  max-width: 218px;
+  flex: 0 1 218px;
 }
 .article__item:not(:last-child) {
   margin-right: 43px;
@@ -197,7 +197,7 @@ ul {
   font-size: 13px;
   margin-bottom: 30px;
 }
-.read__more {
+.article__read-more {
   display: flex;
 }
 .article__link {
@@ -222,7 +222,8 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 38px 22px;
+  padding: 15px 22px;
+  min-height: 140px;
 }
 .send-field__description {
   max-width: 610px;
@@ -270,6 +271,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   min-height: 93px;
+  padding: 15px 0;
   line-height: 1.4;
 }
 .footer__copyright {
