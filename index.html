@@ -7,31 +7,35 @@
    <link rel="stylesheet" href="<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="style/slick.css">
    <link rel="stylesheet" href="style/slick-theme.css">
+   <link rel="stylesheet" href="style/fonts.css">
    <link rel="stylesheet" href="style/style.css">
    <title>Document</title>
 </head>
 <body>
    <div class="wrapper">
       <header class="header">
-         <nav class="header__container container">
+         
+         <div class="header__inner container">
             <a href="#" class="header__logo"><img class="logo__image" src="images/Logo_BisLite.png" alt="#"></a>
-            <ul class="header__navigation">
-               <li class="navigation__item"><a href="#" class="navigation__link">home</a></li>
-               <li class="navigation__item"><a href="#" class="navigation__link">about us</a></li>
-               <li class="navigation__item arrow"><a href="#" class="navigation__link dropbox">services</a>
-                  <ul class="dropbox__list">
-                     <li class="dropbox__item"><a href="" class="dropbox__link">Web Design</a></li>
-                     <li class="dropbox__item"><a href="" class="dropbox__link">Wordpress Design</a></li>
-                     <li class="dropbox__item"><a href="" class="dropbox__link">Mobile App Devplopment</a></li>
-                     <li class="dropbox__item"><a href="" class="dropbox__link">Internet Marketing</a></li>
-                     <li class="dropbox__item"><a href="" class="dropbox__link last__link">Social Media Management</a></li>
-                  </ul>
-               </li>
-               <li class="navigation__item arrow"><a href="#" class="navigation__link dropbox">portfolio</a></li>
-               <li class="navigation__item"><a href="#" class="navigation__link">blog</a></li>
-               <li class="navigation__item"><a href="#" class="navigation__link">contact us</a></li>
-            </ul>
-         </nav>
+            <nav class="header__container ">
+               <ul class="header__navigation">
+                  <li class="navigation__item"><a href="#" class="navigation__link">home</a></li>
+                  <li class="navigation__item"><a href="#" class="navigation__link">about us</a></li>
+                  <li class="navigation__item dropdown"><a href="#" class="navigation__link">services</a>
+                     <ul class="dropbox__list">
+                        <li class="dropbox__item"><a href="" class="dropbox__link">Web Design</a></li>
+                        <li class="dropbox__item"><a href="" class="dropbox__link">Wordpress Design</a></li>
+                        <li class="dropbox__item"><a href="" class="dropbox__link">Mobile App Devplopment</a></li>
+                        <li class="dropbox__item"><a href="" class="dropbox__link">Internet Marketing</a></li>
+                        <li class="dropbox__item"><a href="" class="dropbox__link last__link">Social Media Management</a></li>
+                     </ul>
+                  </li>
+                  <li class="navigation__item arrow"><a href="#" class="navigation__link dropbox">portfolio</a></li>
+                  <li class="navigation__item"><a href="#" class="navigation__link">blog</a></li>
+                  <li class="navigation__item"><a href="#" class="navigation__link">contact us</a></li>
+               </ul>
+            </nav>
+         </div>
       </header>
       <main class="main">
          <div class="main__banner">
@@ -51,66 +55,47 @@
             <div class="article__container container">
                <div class="article__item">
                   <div class="article__name">
-                     <div class="name__icon">
-                        <svg class="name__img">
-                           <use xlink:href="icons/sprite.svg#clean.icn" />
-                        </svg>
-                     </div>
-                     <h2 class="name__title">Clean Theme</h2>
+                     <h2 class="name__title"><div class="name__icon"><span class="icon-clean-theme icn"></span></div>Clean Theme</h2>
                   </div>
-                  <span class="article__subtitle">Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi. </span>
-                  <a href="#" class="article__link">
-                     <span class="link__symbol">&#x3E;</span>Read More
-                  </a>
+                  <p class="article__text">Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi. </p>
+                  <div class="read__more"><span class="link__symbol">&#x3E;</span><a href="#" class="article__link">Read More</a></div>
                </div>
                <div class="article__item">
                   <div class="article__name">
-                     <div class="name__icon">
-                        <svg class="name__img">
-                           <use xlink:href="icons/sprite.svg#responsive.icn" />
-                        </svg>
-                     </div>
-                     <h2 class="name__title">Responsive Design</h2>
+                     <h2 class="name__title"><div class="name__icon"><span class="icon-responsive-design icn"></span></div>Responsive Design</h2>
                   </div>
-                  <span class="article__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at ultricies nisl. Integer at leo eros.</span>
-                  <a href="#" class="article__link">
-                     <span class="link__symbol">&#x3E;</span>Read More
-                  </a>
+                  <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at ultricies nisl. Integer at leo eros.</p>
+                  <div class="read__more">
+                     <span class="link__symbol">&#x3E;</span>
+                     <a href="#" class="article__link">Read More</a>
+                  </div>
                </div>
                <div class="article__item">
                   <div class="article__name">
-                     <div class="name__icon">
-                        <svg class="name__img">
-                           <use xlink:href="icons/sprite.svg#fully.icn" />
-                        </svg>
-                     </div>
-                     <h2 class="name__title">Fully layerd PSD</h2>
+                     <h2 class="name__title"><div class="name__icon"><span class="icon-fully-layerd-psd icn"></span></div>Fully layerd PSD</h2>
                   </div>
-                  <span class="article__subtitle">Phasellus lobortis metus non augue sodales volutpat. Vestibulum sit amet nibh eros, hendrerit venenatis est. In vitae nulla nec purus cursus pretium sed id magna.</span>
-                  <a href="#" class="article__link">
-                     <span class="link__symbol">&#x3E;</span>Read More
-                  </a>
+                  <p class="article__text">Phasellus lobortis metus non augue sodales volutpat. Vestibulum sit amet nibh eros, hendrerit venenatis est. In vitae nulla nec purus cursus pretium sed id magna.</p>
+                  <div class="read__more">
+                     <span class="link__symbol">&#x3E;</span>
+                     <a href="#" class="article__link">Read More</a>
+                  </div>
                </div>
                <div class="article__item">
                   <div class="article__name">
-                     <div class="name__icon">
-                        <svg class="name__img">
-                           <use xlink:href="icons/sprite.svg#ready.icn" />
-                        </svg>
-                     </div>
-                     <h2 class="name__title">Ready for coding</h2>
+                     <h2 class="name__title"><div class="name__icon"><span class="icon-ready-for-coding icn"></span></div>Ready for coding</h2>
                   </div>
-                  <span class="article__subtitle">Vivamus convallis feugiat mauris sed posuere. Nam rutrum, quam quis euismod commodo, elit est porta quam, non placerat eros neque porta ante. Fusce quis odio urna.</span>
-                  <a href="#" class="article__link">
-                     <span class="link__symbol">&#x3E;</span>Read More
-                  </a>
+                  <p class="article__text">Vivamus convallis feugiat mauris sed posuere. Nam rutrum, quam quis euismod commodo, elit est porta quam, non placerat eros neque porta ante. Fusce quis odio urna.</p>
+                  <div class="read__more">
+                     <span class="link__symbol">&#x3E;</span>
+                     <a href="#" class="article__link">Read More</a>
+                  </div>
                </div>
             </div>
          </div>
          <div class="main__send-field">
             <div class="send-field__container container">
                <p class="send-field__description">This is a clean and modern, four column website PSD template. You can code it into a Wordpress website, HTML5 responsive website for your personal or client works. So ahead and download this wonderful PSD template! </p>
-               <a href="#" class="send-field__button">Download PSD</a>
+               <a href="#" class="send-field__button"><span class="icon-download-psd"></span>Download PSD</a>
             </div>
          </div>
       </main>
@@ -118,7 +103,7 @@
          <div class="footer__container container">
             <span class="footer__copyright">© Copyright 2012 - BisLite Inc. All rights reserved. Some free icons used here are created by Brankic1979.com.
                Client Logos are copyright and trademark of the respective owners / companies. </span>
-               <a href="#" class="header__logo"><img class="logo__image" src="images/Logo_BisLite.png" alt="#"></a>
+               <a href="#" class="header__logo footer__logo"><img class="logo__image" src="images/Logo_BisLite.png" alt="#"></a>
          </div>
       </footer>
    </div>
